@@ -8,12 +8,15 @@
 </head>
 <body>
 
-  <header>
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
+
+  <header role="banner">
     <h1>The Pangolin</h1>
 
-    <!-- Jump to main content
-    Jump to navigation -->
-    <nav>
+    <nav role="navigation" id="nav">
       <ul>
         <li><a href="#description">Description</a></li>
         <li><a href="#behaviour">Behaviour</a></li>
@@ -22,21 +25,21 @@
     </nav>
   </header>
 
-  <main>
-    <section>
+  <main role="main" id="main">
+    <section id="description" tabindex="0">
       <h2>Description</h2>
     </section>
 
-    <section>
+    <section id="behaviour" tabindex="0">
       <h2>Behaviour</h2>
     </section>
 
-    <section>
+    <section id="conservation" tabindex="0">
       <h2>Conservation</h2>
     </section>
   </main>
 
-  <footer>
+  <footer role="contentinfo">
     <small>© 1821 Pangolin</small>
   </footer>
 
